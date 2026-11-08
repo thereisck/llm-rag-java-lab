@@ -1,0 +1,26 @@
+# 密钥
+.env
+*.env
+!.env.example
+
+# 语料与评测集含个人文本（收入、房贷等），不入库
+data/*.csv
+data/*.tsv
+data/*.sql
+!data/*.example.csv
+seed/seed_chunks.sql
+seed/chunk_index.tsv
+
+# Python
+__pycache__/
+*.pyc
+
+# Java
+target/
+*.class
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

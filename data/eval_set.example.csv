@@ -1,0 +1,4 @@
+﻿question,expected_doc_id,expected_chunk_id,note
+问题示例：这个字段是干什么用的,101,101,positive|示例行，真实评测集在 data/ 下且不入库
+问题示例：某某配置的默认值是多少,102,102,positive|示例行
+库里查不到的问题示例,,,unanswerable|负样本：不进 Recall 分母，单独算误召回率
