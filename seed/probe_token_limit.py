@@ -16,7 +16,8 @@ import urllib.error
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(os.path.dirname(HERE))
+# 脚本可以被复制到仓库里跑，所以语料根目录不靠相对路径推，用环境变量覆盖
+ROOT = os.environ.get("RAGLAB_ROOT") or r"D:\个人知识库\破局"
 DOC = os.path.join(ROOT, "90天AI工程破局计划.md")
 
 LENGTHS = [100, 200, 300, 400, 450, 480, 500, 512, 550, 600, 700, 800]
